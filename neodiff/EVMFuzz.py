@@ -155,7 +155,7 @@ if __name__ == "__main__":
 
     fuzzer.vm1 = VMRunnerProcess(
         [
-            "./go-ethereum/build/bin/evm",
+            "./go-ethereum/core/vm",
             "--json",
             "--sender",
             "0x00",
@@ -169,12 +169,15 @@ if __name__ == "__main__":
 
     fuzzer.vm2 = VMRunnerProcess(
         [
-            "./openethereum/target/release/openethereum-evm",
-            "--chain",
-            "./openethereum/crates/ethcore/res/chainspec/test/istanbul_test.json",
-            "--gas",
-            "1337",
+            "./offchainlabs-go-ethereum/core/vm",
             "--json",
+            "--sender",
+            "0x00",
+            "--receiver",
+            "0x00",
+            "--gas",
+            "0x1337",
+
         ]
     )
     fuzzer.vm2.prepare_cli = lambda code: ["--code", code]
