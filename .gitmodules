@@ -1,0 +1,6 @@
+[submodule "neodiff/go-ethereum"]
+	path = neodiff/go-ethereum
+	url = https://github.com/ethereum/go-ethereum.git
+[submodule "neodiff/offchainlabs-go-ethereum"]
+	path = neodiff/offchainlabs-go-ethereum
+	url = https://github.com/OffchainLabs/go-ethereum.git
