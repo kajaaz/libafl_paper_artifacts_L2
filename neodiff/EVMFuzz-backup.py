@@ -78,10 +78,10 @@ class ENeoDiffConfig(FuzzerConfig):
                         #    typehash += "4"
                         elif len(item) < 40:
                             typehash += "5"
-                if "memory" in out[i + 1]:
-                    m.update(out[i + 1]["memory"].rstrip("0").encode("ascii"))
-                    if len(out[i + 1]["memory"]) > 2:
-                        typehash += "6"
+		if "memory" in out[i +1]:
+  		    m.update(out[i + 1]["memory"].rstrip("0").encode("ascii"))
+                if len(out[i + 1]["memory"]) > 2:
+                    typehash += "6"
             else:
                 pass
                 # logger.info(out[i])
@@ -141,7 +141,7 @@ if __name__ == "__main__":
     parser.add_argument("--name", "-n", default=None, type=str, help="name")
     parser.add_argument("--roundsize", "-r", default=1000, type=int, help="round size")
     parser.add_argument("--depth", "-d", default=50, type=int, help="execution depth")
-    parser.add_argument("--probability", "-p", default=1, type=int, help="probability")
+    parser.add_argument("--probability", "-p", default=1, type=int, help="propability")
 
     args = parser.parse_args()
 
@@ -178,6 +178,7 @@ if __name__ == "__main__":
             "0x00",
             "--gas",
             "0x1337",
+
         ]
     )
     fuzzer.vm2.prepare_cli = lambda code: ["--code", code]
