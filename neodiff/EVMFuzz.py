@@ -180,7 +180,7 @@ if __name__ == "__main__":
             "0x1337",
         ]
     )
-    fuzzer.vm2.prepare_cli = lambda code: ["--code", code]
+    fuzzer.vm2.prepare_cli = lambda code: ["--code", code, "run"]
 
     fuzzer.clean_exit_opcode = 0xF3
 
