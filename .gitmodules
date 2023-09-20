@@ -10,3 +10,9 @@
 [submodule "neodiff/op-erigon"]
 	path = neodiff/op-erigon
 	url = https://github.com/testinprod-io/op-erigon.git
+[submodule "neodiff/opcraft"]
+	path = neodiff/opcraft
+	url = https://github.com/latticexyz/opcraft.git
+[submodule "neodiff/op-geth-conway"]
+	path = neodiff/op-geth-conway
+	url = https://github.com/therealbytes/conway-op-geth.git
