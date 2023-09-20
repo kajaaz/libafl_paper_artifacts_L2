@@ -7,3 +7,6 @@
 [submodule "neodiff/op-geth"]
 	path = neodiff/op-geth
 	url = https://github.com/ethereum-optimism/op-geth.git
+[submodule "neodiff/op-erigon"]
+	path = neodiff/op-erigon
+	url = https://github.com/testinprod-io/op-erigon.git
