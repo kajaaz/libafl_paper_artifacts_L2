@@ -16,3 +16,6 @@
 [submodule "neodiff/op-geth-conway"]
 	path = neodiff/op-geth-conway
 	url = https://github.com/therealbytes/conway-op-geth.git
+[submodule "neodiff/nitro"]
+	path = neodiff/nitro
+	url = https://github.com/OffchainLabs/nitro.git
