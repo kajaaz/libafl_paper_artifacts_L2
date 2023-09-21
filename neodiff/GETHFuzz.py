@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Fuzzer for EVM
+# Fuzzer for GETH binary
 
 import subprocess
 import random
@@ -169,32 +169,18 @@ if __name__ == "__main__":
     })
 
     fuzzer.vm1 = VMRunnerProcess(
-    [
-            "./op-geth/build/bin/evm",
-            "--json",
-            "--sender",
-            "0x00",
-            "--receiver",
-            "0x00",
-            "--gas",
-            "0x1337",
+        [
+            "./op-geth/build/bin/geth",
         ]
     )
-    fuzzer.vm1.prepare_cli = lambda code: ["--code", code, "run"]
+    fuzzer.vm1.prepare_cli = lambda code: ["--exec", json_rpc_command]
 
     fuzzer.vm2 = VMRunnerProcess(
-       [
-            "./op-geth-conway/build/bin/evm",
-            "--json",
-            "--sender",
-            "0x00",
-            "--receiver",
-            "0x00",
-            "--gas",
-            "0x1337",
+        [
+            "./op-geth-conway/build/bin/geth",
         ]
     )
-    fuzzer.vm2.prepare_cli = lambda code: ["--code", code, "run"]
+    fuzzer.vm2.prepare_cli = lambda code: ["--exec", json_rpc_command]
 
     fuzzer.clean_exit_opcode = 0xF3
 
