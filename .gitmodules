@@ -19,3 +19,6 @@
 [submodule "neodiff/nitro"]
 	path = neodiff/nitro
 	url = https://github.com/OffchainLabs/nitro.git
+[submodule "neodiff/zksync"]
+	path = neodiff/zksync
+	url = https://github.com/matter-labs/zksync.git
