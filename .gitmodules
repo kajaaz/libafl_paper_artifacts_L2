@@ -25,3 +25,6 @@
 [submodule "neodiff/polygon-zkevm-prover"]
 	path = neodiff/polygon-zkevm-prover
 	url = https://github.com/0xPolygonHermez/zkevm-prover.git
+[submodule "neodiff/l2geth-scroll"]
+	path = neodiff/l2geth-scroll
+	url = https://github.com/scroll-tech/go-ethereum.git
