@@ -28,3 +28,6 @@
 [submodule "neodiff/l2geth-scroll"]
 	path = neodiff/l2geth-scroll
 	url = https://github.com/scroll-tech/go-ethereum.git
+[submodule "neodiff/scroll"]
+	path = neodiff/scroll
+	url = https://github.com/scroll-tech/scroll.git
