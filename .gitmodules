@@ -22,3 +22,6 @@
 [submodule "neodiff/zksync"]
 	path = neodiff/zksync
 	url = https://github.com/matter-labs/zksync.git
+[submodule "neodiff/polygon-zkevm-prover"]
+	path = neodiff/polygon-zkevm-prover
+	url = https://github.com/0xPolygonHermez/zkevm-prover.git
